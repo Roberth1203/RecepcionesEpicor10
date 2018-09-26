@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2D014BD-835F-4727-A307-2DD8422F1B3E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Epicor10</RootNamespace>
+    <AssemblyName>Epicor10</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Epicor.App.Version">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Epicor.App.Version.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.Ice.Version">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Epicor.Ice.Version.dll</HintPath>
+    </Reference>
+    <Reference Include="Epicor.ServiceModel">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Epicor.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Adapters.Receipt">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Erp.Adapters.Receipt.dll</HintPath>
+    </Reference>
+    <Reference Include="Erp.Contracts.BO.Receipt">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Erp.Contracts.BO.Receipt.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Adapters.UserFile">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Ice.Adapters.UserFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Contracts.BO.UserFile">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Ice.Contracts.BO.UserFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Core.Session">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Ice.Core.Session.dll</HintPath>
+    </Reference>
+    <Reference Include="Ice.Lib.AppSettingsHandler">
+      <HintPath>..\..\..\..\..\..\..\Epicor\ERP10.0Client\Client\Ice.Lib.AppSettingsHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Credentials.cs" />
+    <Compile Include="EpicorMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{be713d45-0a1a-49ed-bc94-cb2f100fcacf}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

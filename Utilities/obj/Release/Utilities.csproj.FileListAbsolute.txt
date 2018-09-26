@@ -1,0 +1,6 @@
+C:\Users\desarrollo3\Documents\Visual Studio 2017\Projects\InterfazBonitaEpicor\Utilities\bin\Release\Utilities.dll
+C:\Users\desarrollo3\Documents\Visual Studio 2017\Projects\InterfazBonitaEpicor\Utilities\bin\Release\Utilities.pdb
+C:\Users\desarrollo3\Documents\Visual Studio 2017\Projects\InterfazBonitaEpicor\Utilities\obj\Release\Utilities.csprojAssemblyReference.cache
+C:\Users\desarrollo3\Documents\Visual Studio 2017\Projects\InterfazBonitaEpicor\Utilities\obj\Release\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\desarrollo3\Documents\Visual Studio 2017\Projects\InterfazBonitaEpicor\Utilities\obj\Release\Utilities.dll
+C:\Users\desarrollo3\Documents\Visual Studio 2017\Projects\InterfazBonitaEpicor\Utilities\obj\Release\Utilities.pdb
